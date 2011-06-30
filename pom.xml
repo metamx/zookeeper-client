@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.proofpoint.com.metamx</groupId>
     <artifactId>zookeeper-client</artifactId>
-    <version>0.6</version>
+    <version>0.7-SNAPSHOT</version>
 
     <scm>
         <connection>scm:git:ssh://git@github.com/metamx/zookeeper-client.git</connection>
