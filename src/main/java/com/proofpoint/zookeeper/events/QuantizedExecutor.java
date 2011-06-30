@@ -16,7 +16,7 @@
 package com.proofpoint.zookeeper.events;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
-import com.proofpoint.log.Logger;
+import com.proofpoint.zookeeper.log.Logger;
 
 import java.util.concurrent.DelayQueue;
 import java.util.concurrent.Delayed;

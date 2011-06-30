@@ -17,7 +17,7 @@ package com.proofpoint.zookeeper;
 
 import com.google.common.base.Charsets;
 import com.google.common.io.Files;
-import com.proofpoint.log.Logger;
+import com.proofpoint.zookeeper.log.Logger;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;

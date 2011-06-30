@@ -17,7 +17,7 @@ package com.proofpoint.zookeeper;
 
 import ch.qos.logback.classic.Level;
 import com.proofpoint.zookeeper.io.TempLocalDirectory;
-import com.proofpoint.log.Logger;
+import com.proofpoint.zookeeper.log.Logger;
 import org.apache.zookeeper.ClientCnxn;
 import org.apache.zookeeper.server.FinalRequestProcessor;
 import org.apache.zookeeper.server.NIOServerCnxn;

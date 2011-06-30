@@ -15,7 +15,7 @@
  */
 package com.proofpoint.zookeeper;
 
-import com.proofpoint.log.Logger;
+import com.proofpoint.zookeeper.log.Logger;
 
 public class DefaultZookeeperClientErrorHandler implements ZookeeperClientErrorHandler
 {

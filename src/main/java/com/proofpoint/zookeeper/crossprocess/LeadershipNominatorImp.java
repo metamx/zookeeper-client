@@ -15,7 +15,7 @@
  */
 package com.proofpoint.zookeeper.crossprocess;
 
-import com.proofpoint.log.Logger;
+import com.proofpoint.zookeeper.log.Logger;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
 import java.util.concurrent.ExecutorService;
@@ -140,7 +140,7 @@ public class LeadershipNominatorImp implements LeadershipNominator
             }
             catch ( Exception e )
             {
-                log.error(e);
+                log.error(e, "Some exception thingie.");
             }
             finally
             {

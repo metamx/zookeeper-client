@@ -16,7 +16,7 @@
 package com.proofpoint.zookeeper;
 
 import com.google.common.base.Preconditions;
-import com.proofpoint.log.Logger;
+import com.proofpoint.zookeeper.log.Logger;
 import org.apache.hadoop.io.retry.RetryPolicy;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooKeeper;

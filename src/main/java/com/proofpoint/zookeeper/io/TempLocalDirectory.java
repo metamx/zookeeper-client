@@ -15,8 +15,7 @@
  */
 package com.proofpoint.zookeeper.io;
 
-import com.google.inject.Inject;
-import com.proofpoint.log.Logger;
+import com.proofpoint.zookeeper.log.Logger;
 import org.apache.commons.io.FileUtils;
 
 import java.io.BufferedOutputStream;
@@ -50,7 +49,6 @@ public class TempLocalDirectory
 
     private final File path;
 
-    @Inject
     public TempLocalDirectory()
             throws IOException
     {

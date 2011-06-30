@@ -18,7 +18,7 @@ package com.proofpoint.zookeeper;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import com.proofpoint.zookeeper.events.EventQueue;
-import com.proofpoint.log.Logger;
+import com.proofpoint.zookeeper.log.Logger;
 import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
@@ -106,7 +106,7 @@ public class ChildDataWatcher implements EventQueue.EventListener<ZookeeperEvent
             }
         }
         catch ( Exception e ) {
-            log.error(e);
+            log.error(e, "Some exception thingerator.");
             throw new RuntimeException(e);
         }
     }

@@ -16,14 +16,11 @@
 package com.proofpoint.zookeeper;
 
 import com.google.common.util.concurrent.MoreExecutors;
-import com.proofpoint.configuration.ConfigurationFactory;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.TimeUnit;
@@ -38,9 +35,7 @@ public class TestChildrenSync
             throws Exception
     {
         server = new ZookeeperTestServerInstance();
-        Map<String, String> props = new HashMap<String, String>();
-        props.put("zookeeper.connection-string", server.getConnectString());
-        ZookeeperClientConfig config = new ConfigurationFactory(props).build(ZookeeperClientConfig.class);
+        ZookeeperClientConfig config = new ZookeeperClientConfig().setConnectionString(server.getConnectString());
         client = new ZookeeperClient(config);
     }
 
